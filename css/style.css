@@ -1,0 +1,33 @@
+body{
+    max-width: 1443px
+}
+
+.image_header{
+    background-image: url("image/background_header.svg");
+    opacity: 1.0;
+    min-height: 1000px;
+    min-width: 1440px;
+    
+
+   
+  
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+
+
+}
+
+.navItem{
+    font-size: 1.3em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    color: white;
+}
+
+.navItem1{
+    text-align: center;
+}
