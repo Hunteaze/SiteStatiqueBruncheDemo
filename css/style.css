@@ -11,7 +11,7 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
-
+    filter: brightness(1.5);
     padding-bottom: 200px;
     
 }
@@ -19,6 +19,7 @@ header{
 main{
     background: url("./image/background_main.png") center;
     background-repeat: no-repeat;
+    filter: brightness(1.2);
     background-size: cover;
     padding: 10%;
 }
@@ -150,9 +151,14 @@ p{
     margin: 6%;
 }
 
+.min_padding{
+    padding: 3% 4% 3% 4%;
+}
+
 .center{
     text-align: center;
     margin: auto;
+    justify-content: center;
     
 }
 
@@ -164,7 +170,7 @@ p{
 
 .background_second_color{
     background-color: #d4d8d9;
-    padding: 3% 4% 3% 4%;
+   
  
 }
 
@@ -219,4 +225,12 @@ p{
 .prix{
    font-weight: bolder ;
    font-size: 1rem;
+}
 
+
+.flex_grid_1rowby4_2rowby2
+{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
