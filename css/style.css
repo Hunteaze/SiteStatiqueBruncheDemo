@@ -10,9 +10,10 @@ header{
     background: url("./image/background_header.png") center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top left;
+    background-position: center;
     filter: brightness(1.1);
     padding-bottom: 200px;
+
     
 }
 
@@ -129,17 +130,20 @@ mark{
     font-weight: bolder;
     color: #FFFFFFC0;
     text-align: center;
+    display: none;
     
 }
 
 .navItem1{
     text-align: center;
     text-align: start;
+    display: block;
    
 }
 
 .MainTitle{
     
+    min-width: 300px;
     width: 50%;
     height: 450px;
     padding: 100px 20px 0px 20px;
@@ -168,11 +172,18 @@ mark{
 
 .flex_responsive{
     display: flex;
-    flex-direction: row;
-  
-  
-    
+    flex-direction: column;
+
 }
+.flex_responsive_tablete{
+    display: flex;
+    flex-direction: column;
+   
+
+
+}
+
+
 
 .flex_row{
     display: flex;
@@ -184,7 +195,12 @@ mark{
     margin: 6%;
 }
 
-
+.teste{
+    margin: auto;
+    justify-content: space-between;
+    width: 90%;
+    
+}
 
 
 
@@ -197,7 +213,7 @@ mark{
     padding: 0% 4% 0% 4%;
 }
 .paddin_lateral{
-    margin: 0 30% 0 30%;
+    margin: 0 00% 0 30%;
 }
 
 .medium_padding{
@@ -238,8 +254,8 @@ mark{
 .main_grid{
    
     display: grid;
-    grid-template-columns:  1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns:  1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 0px;
     width: 80%;
 
@@ -254,7 +270,7 @@ mark{
 }
 
 .itemTitle{
-    grid-column: 1/5;
+    grid-column: 1/2;
     
 }
 
@@ -288,23 +304,16 @@ mark{
     padding: 0% 10% 0% 10%;
 }
 
-.flex_grid_1rowby4_2rowby2
-{
-   
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 0;
-}
+
 
 .social_grid{
     min-width: 25%;
     width: 25%;
     margin: 0% auto 5% auto;
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: 0px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
+    gap: 20px;
    
   
 }
@@ -314,6 +323,12 @@ mark{
     font-weight: bold;
     font-family: 'Raleway', sans-serif;
     color: white;
+}
+
+.deco_responsive{
+    display: none;
+    width: 15%;
+    
 }
 
 td.pastille{
@@ -329,9 +344,9 @@ td.pastille{
 
 .table_flex{
    
-    justify-content: space-between;
-    padding: 0 10%  0 10%;
-    
+    justify-content: center;
+    align-items: center;
+   
 
 }
 
@@ -340,9 +355,6 @@ table{
     
 }
 
-.form_space{
-    margin-bottom: 50px;
-}
 
 
 td p{
@@ -353,6 +365,7 @@ td p{
 td h6{
     margin: 0;
 }
+
 
 .title_form{
     font-size: 5rem;
@@ -372,6 +385,12 @@ form{
     
 }
 
+.form_space{
+    margin-bottom: 50px;
+}
+
+
+
 form label{
     display: block;
     margin-bottom: 8px;
@@ -385,7 +404,7 @@ input , select  , button{
     border-width: 2px;
     border-style: solid;
     height: 25px;
-    width: 200px;
+    width: 100%;
     padding-left: 5px;
     color: white;
     font-family: 'Raleway', sans-serif;
@@ -394,10 +413,14 @@ input , select  , button{
 
 }
 
+select{
+    width: 106%;
+}
+
 button{
     display: block;
     margin: 60px auto 0 auto;
-    width: 210px;
+    width: 200px;
     height: 30px;
 
 }
@@ -468,16 +491,15 @@ select::content{
 .menu_carte{
    margin: 2%;
    color:#4f4e4e;
-   width: 340px;
+  
    background-color: white;
    
 }
 
 .menu_carte img{
     width: 100%;
-    min-width: 340px;
-    height: 300px;
-    text-align: start;
+    
+    text-align: center;
 }
 
 .menu_carte p{
@@ -532,21 +554,33 @@ footer .texte_dark{
 
 footer .flex_responsive{
     justify-content: space-around;
+    align-items: start;
 
    
-    padding: 0% 17%;
+    padding: 0% 15%;
 }
 
-footer .flex_row{
-    padding-right: 35%;
+.flex_responsive .flex_responsive{
+    justify-content: start;
+    padding: 0;
 }
 
-.teste{
+
+
+.footer_info{
   
     margin-left: 0;
-    width: 30%;
+    width: 100%;
     padding-left: 0;
    
+}
+
+.foot_lien{
+    padding: 0; 
+    text-align: start;
+    margin: 0; 
+    width: 100%; 
+    margin: 25%  10%;
 }
 
 
@@ -566,3 +600,147 @@ footer .flex_row h7{
 }
 
 
+
+
+
+/*Style pour ordinateur*/
+@media only screen and (min-width : 768px) {
+    .flex_responsive{
+        flex-direction: row;
+    }
+
+    .navItem{
+        display: inline;
+    }
+
+    .main_grid{
+   
+      
+        grid-template-columns:  1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr ;
+       
+    
+       
+    }
+
+    .itemTitle{
+        grid-column: 1/5;
+        
+    }
+    .table_flex{
+  
+        justify-content: center;
+        margin: auto;
+        width: 100%;
+      
+        
+        
+    
+    }
+
+    .table_flex div{
+        margin: 5%;
+    }
+
+
+
+    .social_grid{
+        
+        min-width: 25%;
+        width: 25%;
+        margin: 0% auto 5% auto;
+        display: grid;
+        grid-template-rows: 1fr ;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 5%;
+       
+      
+    }
+    .footer_info{
+  
+        margin-left: 0;
+        width: 30%;
+        padding-left: 0;
+       
+    }
+
+    .deco_responsive{
+        display: block;
+        width: 15%;
+        
+    }
+
+    .teste{
+        margin: auto;
+        justify-content: space-between;
+        width: 60%;
+        
+    }
+    .menu_carte{
+        margin: 2%;
+        color:#4f4e4e;
+        width: 340px;
+        background-color: white;
+        
+     }
+
+    .menu_carte img{
+        width: 100%;
+      
+        height: auto;
+        text-align: start;
+    }
+
+    .form_space{
+        margin-bottom: 50px;
+       
+    }
+
+    .flex_responsive_tablete{
+        display: flex;
+        flex-direction: row;
+    
+    }
+
+    
+}
+
+@media only screen and (min-width: 768px ) and (max-width : 1200px) {
+    .main_grid{
+   
+      
+        grid-template-columns:  1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+       
+    
+       
+    }
+
+    .itemTitle{
+        grid-column: 1/3;
+        
+    }
+
+    .foot_lien{
+       
+        margin: 11%  6%;
+    }
+
+    .flex_responsive_tablete{
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    nav{
+        display: grid;
+        grid-template-columns: 1.3fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        
+        padding: 5% 10% 15% 10%;
+       
+        text-transform: uppercase;
+    
+    }
+    
+}
