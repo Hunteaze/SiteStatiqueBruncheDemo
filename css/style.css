@@ -48,7 +48,7 @@ nav{
     display: grid;
     grid-template-columns: 2.5fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    padding: 5% 15% 15% 15%;
+    padding: 5% 2% 15% 2%;
     text-transform: uppercase;
 }
 
@@ -311,7 +311,13 @@ mark{
     padding: 0% 10% 0% 10%;
 }
 
+.table_fusion_responsive_top{
+   margin-bottom: 0;
+}
 
+.table_fusion_responsive_bot{
+    margin-top: -50px;
+}
 
 
 
@@ -380,13 +386,14 @@ form{
     color:var(--color_white);
     font-family: var(--main_font);
     font-weight: 600;
+  
     
 }
 
 
 
 .grid_formulaire{
-    height: 1000px;
+    height: auto;
     display: grid;
     grid-template-columns:  70% ;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -408,7 +415,8 @@ form label{
 }
 
 .form_space{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: start;
    
 }
 
@@ -425,11 +433,21 @@ input , select  , button{
     font-family: var(--main_font);
     font-weight: 600;
     font-size: 1rem;
+    padding: 0px;
+}
+
+button{
+    width: 102%;
+    height: 27px;
+    text-align: center;
+    padding: 0;
+    margin: 30px 0 20px 0;
 }
 
 select{
-    width: 103%;
-    height: 33px;
+  
+    width: 102%;
+    height: 30px;
 }
 
 
@@ -444,7 +462,7 @@ input[type = "date"] , input[type="time"]{
 
 input[type = "date"]::-webkit-calendar-picker-indicator{
     background-color: var(--main_color);
-    padding: 5px;
+    padding: 0px;
     cursor: pointer;
     border-radius: 3px;
     display: block; 
@@ -635,6 +653,10 @@ footer .flex_row h7{
         margin: 5%;
     }
 
+    .table_fusion_responsive_bot{
+        margin-top: 0px;
+    }
+
 
 
     .social_grid{
@@ -715,6 +737,9 @@ footer .flex_row h7{
        margin: 25%  10%;
     }
 
+    .empty_space{
+        display: none;
+    }
     
 }
 
@@ -745,13 +770,23 @@ footer .flex_row h7{
 
     nav{
         display: grid;
-        grid-template-columns: 1.3fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
+        grid-template-columns: 1.3fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         
-        padding: 5% 10% 15% 10%;
+        padding: 5% 5% 15% 5%;
        
         text-transform: uppercase;
     
     }
+
+    .empty_space{
+        display: block;
+    }
+
+    button{
+        margin : 0;
+    }
+
+  
     
 }
